@@ -9,9 +9,9 @@ const MainNavigation = (props) => {
   const authCtx=useContext(AuthContext);
 
   const isLoggedIn=authCtx.isLoggedIn;
-  // const logOutHandler=()=>{
-  //   authCtx.logout();
-  // }
+  const logOutHandler=()=>{
+    authCtx.logout();
+  }
 
   return (
     <header className={classes.header}>
